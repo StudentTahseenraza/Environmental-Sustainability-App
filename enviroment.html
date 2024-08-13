@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Sustainability App</title>
+    <link rel="stylesheet" href="enviroment.css">
+</head>
+<body>
+    <header>
+        <h1>Environmental Sustainability App</h1>
+    </header>
+
+    <main>
+        <section id="auth">
+            <h2>User Authentication</h2>
+            <div id="authForms">
+                <form id="loginForm">
+                    <h3>Login</h3>
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" required>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" required>
+                    <button type="submit">Login</button>
+                </form>
+                <form id="registerForm">
+                    <h3>Register</h3>
+                    <label for="registerUsername">Username:</label>
+                    <input type="text" id="registerUsername" required>
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+            <div id="userArea" style="display: none;">
+                <p>Welcome, <span id="username"></span>!</p>
+                <button id="logoutButton">Logout</button>
+            </div>
+        </section>
+
+        <section id="calculator" style="display: none;">
+            <h2>Carbon Footprint Calculator</h2>
+            <form id="calculatorForm">
+                <label for="transportation">Transportation (km):</label>
+                <input type="number" id="transportation" name="transportation" required>
+
+                <label for="energy">Energy Consumption (kWh):</label>
+                <input type="number" id="energy" name="energy" required>
+
+                <label for="waste">Waste Production (kg):</label>
+                <input type="number" id="waste" name="waste" required>
+
+                <button type="submit">Calculate</button>
+            </form>
+            <p id="result"></p>
+        </section>
+
+        <section id="tips" style="display: none;">
+            <h2>Tips for Reducing Carbon Footprint</h2>
+            <ul id="tipsList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Environmental Sustainability App</p>
+    </footer>
+    <script src="enviroment.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
